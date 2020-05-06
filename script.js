@@ -64,15 +64,22 @@ coinContainer.addEventListener("click", (event) => {
 
 
 //3
-
-let lightBulb = document.querySelector(".lightButtons");
+let lightBulb = document.querySelector(".light-buttons");
+let bulb = document.querySelector(".bulb")
 lightBulb.addEventListener("click", (event) => {
     if (event.target.classList.contains("on")) {
-        event.target.classList.add("light");
+        bulb.classList.add("light");
     } else if (event.target.classList.contains("off")) {
-        event.target.classList.remove("light");
-    } else if (event.target.classList.contains("toggle")) {
-        event.target.classList.toggle("light");
+        bulb.classList.remove("light");
+    } else if (event.target.classList.contains("light-toggle")) {
+        bulb.classList.toggle("light");
+    } else {
+        bulb.remove();
+        let bulbButtons = document.querySelectorAll(".btn");
+        //review-changes buttons to be disabled!
+        bulbButtons.forEach((button) => {
+            button.disabled = true;
+        })
     }
-})
+});
 
