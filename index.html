@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="button-container">
+        <p class="total">Total:$0.00</p>
+        <button class="button cola" data-amount="2.00">Lime Cola $2.00</button>
+        <button class="button peanuts" data-amount="3.00">Salted Peanuts $3.00</button>
+        <button class="button chocolate" data-amount="4.00">Chocolate Bar $4.00</button>
+        <button class="button gummies" data-amount="6.00">Fruit Gummies $6.00</button>
+    </div>
+    <form class="form">
+        <label for="amount">How many?</label>
+        <input type="text" id="amount" name="amount">
+        <label for="coin">Which Coin?</label>
+        <select name="coin" id="coin">
+            <option value="penny">Penny</option>
+            <option value="nickle">Nickle</option>
+            <option value="dime">Dime</option>
+            <option value="quarter">Quarter</option>
+        </select>
+        <button>Make Money!</button>
+
+
+    </form>
+    <div class="coin-container"></div>
+
+    <section class="lightButtons">
+        <div class="light bulb"></div>
+        <button class="btn on">on</button>
+        <button class="btn off">off</button>
+        <button class="btn lightToggle">toggle</button>
+
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

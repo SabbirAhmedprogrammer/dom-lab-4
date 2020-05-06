@@ -1,0 +1,9 @@
+.bulb {
+    background-color:lightgray;
+    height:50px;
+    width:50px;
+}
+
+.light {
+    background-color:yellow;
+}
